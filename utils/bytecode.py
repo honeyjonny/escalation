@@ -41,6 +41,7 @@ def main():
     opcodes = nasm_compile(sys.argv[1])   
     print >> open(sys.argv[1]+'_bc.txt','wb'), opcodes
     os.remove(sys.argv[1]+'.bin')
+    print 'ok :)'
     sys.exit()
 
 main()
