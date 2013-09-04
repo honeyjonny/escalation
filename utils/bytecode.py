@@ -1,15 +1,11 @@
 #!/usr/bin/python
 # coding:  UTF-8
-import sys, os, time
+import sys, os, time, optparse
 
-def usage():
-    print """Usage: bytecode.py nasm_src_file [nrb] [ngc]
+usage = """Usage: bytecode.py <nasm_src_file> [--nrb] [--ngc] [-h | --help]
 
                     hj's utilite to fast compile
                     opcodes using nasm assembler
-
-                    nrb - not remove compiled binary file
-                    ngc - not generate c-proof source code
 
                     ********!!!!!!!!!!!!!********
 
@@ -94,24 +90,17 @@ def bc(nasm_src, hdd=True, rembin=True, shctest=True):
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        usage()
-        sys.exit()
+        print usage
+        sys.exit(0)
 
-    if len(sys.argv) == 2:
-        rb = True
-    elif sys.argv[2] == "nrb":
-        rb = False
-    else:
-        rb = True
+    p = optparse.OptionParser()
+    p.set_usage(usage)
+    p.add_option('--nrb', action="store_false", dest="rb", help="not remove compiled binary file")
+    p.add_option('--ngc', action="store_false",dest="gc", help="not generate c-proof source code")
+    p.set_defaults(rb=True,gc=True)
+    opt, args = p.parse_args()
 
-    if len(sys.argv) == 3:
-        gc = True
-    elif sys.argv[3] == "ngc":
-        gc = False
-    else:
-        gc = True
-
-    bc(sys.argv[1], rembin=rb, shctest=gc)
+    bc(sys.argv[1], rembin=opt.rb, shctest=opt.gc)
     sys.exit(0)
 
 #EOF
