@@ -42,5 +42,8 @@ some info about func grops:
 <img src="http://sharepix.ru/request/pbvwpybkyfpzvi8z1xudtit5q9ye3d9so4pe31y1/image496279a8.jpeg" alt="info1" title="Info1" />
 
 now, thats all, enjoy you work!
-tnkx!
 
+want more?
+just try!
+
+tnkx!
