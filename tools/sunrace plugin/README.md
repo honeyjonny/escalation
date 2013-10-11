@@ -21,25 +21,25 @@ valgrind --tool=callgrind --trace-children=yes --collect-jumps=yes --dump-instr=
 
 run:
 
-<img src="http://sharepix.ru/thmb/thmb201310/77u7vmarp6496273/image496273af.jpeg" alt="run" title="Run" />
+<img src="http://sharepix.ru/request/2y79d5nqj7aqkm01zmpzp954py2eywx1v4999wzr/image496280q6.jpeg" alt="run" title="Run" />
 
 select analyse two profs:
 
-<img src="http://sharepix.ru/thmb/thmb201310/bcwd0vt1yx496274/image496274gt.jpeg" alt="two" title="Select Profs" />
+<img src="http://sharepix.ru/request/6hvbg57qjjv4h4sd3vkw3lefkj6ntj3z1yah3g8m/image496281ln.jpeg" alt="two" title="Select Profs" />
 
 answer to questions, wait, enjoy!
 
-<img src="http://sharepix.ru/thmb/thmb201310/uh1rdnygsf496275/image496275lr.jpeg" alt="enjoy" title="Work Done" />
+<img src="http://sharepix.ru/request/2n7rgx7g4p5mm5qwmzdobo2verzxz9f1vmsbjzsm/image496282sj.jpeg" alt="enjoy" title="Work Done" />
 
 all actually executed trace from profiles will colored; funcs will dissect by groups, based on profiles:
 
-<img src="http://sharepix.ru/thmb/thmb201310/hrumxv02cq496277/image496277vv.jpeg" alt="executed" title="Trace" />
+<img src="http://sharepix.ru/request/uk0wlc720bxu3xs6ulsrhm8nj0lnjnfe8pat2hua/image4962834p.jpeg" alt="executed" title="Trace" />
 
 some info about func grops:
 
-<img src="http://sharepix.ru/thmb/thmb201310/6wz8iau2tb496278/image496278jb.jpeg" alt="info" title="Info" />
+<img src="http://sharepix.ru/request/efygkhtr7jomhs9zo5uzztaynut4jm0y28elp9dv/image496284bu.jpeg" alt="info" title="Info" />
 
-<img src="http://sharepix.ru/thmb/thmb201310/fhqpgkf5x8496279/image496279a8.jpeg" alt="info1" title="Info1" />
+<img src="http://sharepix.ru/request/pbvwpybkyfpzvi8z1xudtit5q9ye3d9so4pe31y1/image496279a8.jpeg" alt="info1" title="Info1" />
 
 now, thats all, enjoy you work!
 tnkx!
