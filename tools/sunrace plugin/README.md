@@ -25,7 +25,7 @@ run:
 
 select analyse two profs:
 
-<img src="http://oi42.tinypic.com/30953dy.jpg" alt="two" title="Select Profs" />
+<img src="http://oi42.tinypic.com/2141pp0.jpg" alt="two" title="Select Profs" />
 
 answer to questions, wait, enjoy!
 
