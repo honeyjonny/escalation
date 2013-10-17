@@ -29,7 +29,7 @@ select analyse two profs:
 
 answer to questions, wait, enjoy!
 
-<img src="http://sharepix.ru/request/2n7rgx7g4p5mm5qwmzdobo2verzxz9f1vmsbjzsm/image496282sj.jpeg" alt="enjoy" title="Work Done" />
+<img src="http://oi44.tinypic.com/2iuc2z8.jpg" alt="enjoy" title="Work Done" />
 
 all actually executed trace from profiles will colored; funcs will dissect by groups, based on profiles:
 
