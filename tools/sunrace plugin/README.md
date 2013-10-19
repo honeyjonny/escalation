@@ -37,7 +37,7 @@ all actually executed trace from profiles will colored; funcs will dissect by gr
 
 some info about func grops:
 
-<img src="http://sharepix.ru/request/efygkhtr7jomhs9zo5uzztaynut4jm0y28elp9dv/image496284bu.jpeg" alt="info" title="Info" />
+<img src="http://oi39.tinypic.com/21nh8vr.jpg" alt="info" title="Info" />
 
 <img src="http://sharepix.ru/request/pbvwpybkyfpzvi8z1xudtit5q9ye3d9so4pe31y1/image496279a8.jpeg" alt="info1" title="Info1" />
 
