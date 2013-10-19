@@ -21,7 +21,7 @@ valgrind --tool=callgrind --trace-children=yes --collect-jumps=yes --dump-instr=
 
 run:
 
-<img src="http://sharepix.ru/request/2y79d5nqj7aqkm01zmpzp954py2eywx1v4999wzr/image496280q6.jpeg" alt="run" title="Run" />
+<img src="http://oi39.tinypic.com/vfcp6s.jpg" alt="run" title="Run" />
 
 select analyse two profs:
 
@@ -33,13 +33,13 @@ answer to questions, wait, enjoy!
 
 all actually executed trace from profiles will colored; funcs will dissect by groups, based on profiles:
 
-<img src="http://sharepix.ru/request/uk0wlc720bxu3xs6ulsrhm8nj0lnjnfe8pat2hua/image4962834p.jpeg" alt="executed" title="Trace" />
+<img src="http://oi42.tinypic.com/iol0yd.jpg" alt="executed" title="Trace" />
 
 some info about func grops:
 
 <img src="http://oi39.tinypic.com/21nh8vr.jpg" alt="info" title="Info" />
 
-<img src="http://sharepix.ru/request/pbvwpybkyfpzvi8z1xudtit5q9ye3d9so4pe31y1/image496279a8.jpeg" alt="info1" title="Info1" />
+<img src="http://oi41.tinypic.com/2u8dyx3.jpg" alt="info1" title="Info1" />
 
 now, thats all, enjoy you work!
 
